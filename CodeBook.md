@@ -1,5 +1,5 @@
-Study design
-------------
+### Study design
+----------------
 		30 people perform 6 exercises and these are measured by 2 sensors: Accelerometer and Gyroscope.
 		Each of the exercises are originally performed repeatedly (or at different times). 
 		The human group was randomly broken into a training and test group.
@@ -8,15 +8,15 @@ Study design
 		Since requirement is to obtain the Mean and Standard Deviation for each - this produces a total of 12 measurement variables.
 
 
-Calculations basis
-------------------
+### Calculations basis
+----------------------
 		A mean value is calculated for each sensor in X, Y and Z directions producing 6 columns with Mean values
 		A standard dev is calculated for each sensor in X, Y and Z directions producing 6 columns with Std values
 		As noted in the study design that each individual performed multiple repetitions for each exercise. Each row is then an averaged value.
 
 
-Tidy data layout
-----------------
+### Tidy data layout
+--------------------
 		The design for the tidy_data file is based on the following guidelines
 			1. each measurement forms a new variable placed in a new column
 			2. each observation forms a new row
@@ -24,15 +24,15 @@ Tidy data layout
 
 		There are a total of 14 columns in the final tidy_data
 			columns 1 and 2 identify the "subject" and "activity" performed
-			columns 3 through 15 (total 12) are the Mean and Std value in the 3 directions for the 2 sensors
+			columns 3 through 14 (total 12) are the Mean and Std value in the 3 directions for the 2 sensors
 
 		There are a total of 180 rows in the final tidy_data
 			there are total of 6 different exercises and 30 participating humans
 			this produces a total of 180 rows of unique observations
 
 
-Instruction list
-----------------
+### Instruction list
+--------------------
 		The analysis script "run_analysis.R" requires as inputs
 			- 'features.txt': List of all features
 			- 'activity_labels.txt': Links the class labels with their activity name
@@ -47,8 +47,8 @@ Instruction list
 			- 'tidy_data_set_Sunny.txt'
 			
 
-Info about variables
---------------------
+### Info about variables
+------------------------
 	Column Name		Description
 
 	1. Subject		identifies the human participatin

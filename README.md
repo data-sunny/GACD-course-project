@@ -1,20 +1,20 @@
-# GACD-course-project
+### GACD-course-project
 contains files for course project - generating a tidy data set from raw data
 
 
-Background:
-===========
+### Background
+==============
 In this project a "tidy" data set was generated from a raw data set. A script to do so was created and included in this dataset.
 
 The raw set was based on experiments carried out with a group of 30 volunteers.
 Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone on the waist.
-Using its embedded accelerometer and gyroscope, the experiment captured 3-axial linear acceleration and 3-axial angular velocity. 
+Using its embedded accelerometer and gyroscope, the experiment captured 3-axial linear acceleration and 3-axial angular acceleration. 
 
 Note: Additional infomration about the raw data set generation is given in the references at the bottom.
 
 
-Each record in the tidy data set includes:
-==========================================
+### Each record in the tidy data set includes
+=============================================
 - Mean and Std of body acceleration from the accelerometer(6 columns). 
 - Mean and Std of gravity acceleration from the gyroscope (6 columns). 
 - Its activity label (1 column). 
@@ -23,8 +23,8 @@ Each record in the tidy data set includes:
 
 
 
-The dataset includes the following files:
-=========================================
+### The dataset includes the following files
+============================================
 - README.md
 - CodeBook.md
 - "run_analysis.R" : An R script which converts the raw data to the tidy data set
@@ -32,16 +32,16 @@ The dataset includes the following files:
 
 
 
-Method to read the tidy data set:
-=================================
+### Method to read the tidy data set
+====================================
 - In an R programming environment us the following commands
 	> tidy_data <- read.table("tidy_data_set_Sunny.txt", header=TRUE)
 	> str(tidy_data)
 
 
 
-The script (run_analysis.R) that generates the tidy_data does the following:
-============================================================================
+### The script (run_analysis.R) that generates the tidy_data does the following
+===============================================================================
 1. reads the raw data and binds the columns (subject to activity, then to test)
 2. extracts measurements from the raw data
 3. renames the activity lables by word descriptors
@@ -50,8 +50,8 @@ The script (run_analysis.R) that generates the tidy_data does the following:
 
 
 
-Raw data required and its structure to run the analysis script
-==============================================================
+### Raw data required and its structure to run the analysis script
+==================================================================
 - 'features.txt': List of all features
 - 'activity_labels.txt': Links the class labels with their activity name
 
@@ -68,6 +68,6 @@ subject_train,test files reside.
 
 
 
-References:
-========
+### References
+==============
 1. More details about the raw data are available from "https://class.coursera.org/getdata-011/human_grading/view/courses/973498/assessments/3/submissions"
