@@ -3,7 +3,7 @@ contains files for course project - generating a tidy data set from raw data
 
 
 ### Background
-==============
+--------------
 In this project a "tidy" data set was generated from a raw data set. A script to do so was created and included in this dataset.
 
 The raw set was based on experiments carried out with a group of 30 volunteers.
@@ -14,7 +14,7 @@ Note: Additional infomration about the raw data set generation is given in the r
 
 
 ### Each record in the tidy data set includes
-=============================================
+---------------------------------------------
 - Mean and Std of body acceleration from the accelerometer(6 columns). 
 - Mean and Std of gravity acceleration from the gyroscope (6 columns). 
 - Its activity label (1 column). 
@@ -24,7 +24,7 @@ Note: Additional infomration about the raw data set generation is given in the r
 
 
 ### The dataset includes the following files
-============================================
+--------------------------------------------
 - README.md
 - CodeBook.md
 - "run_analysis.R" : An R script which converts the raw data to the tidy data set
@@ -33,7 +33,7 @@ Note: Additional infomration about the raw data set generation is given in the r
 
 
 ### Method to read the tidy data set
-====================================
+------------------------------------
 - In an R programming environment us the following commands
 	> tidy_data <- read.table("tidy_data_set_Sunny.txt", header=TRUE)
 	> str(tidy_data)
@@ -41,7 +41,7 @@ Note: Additional infomration about the raw data set generation is given in the r
 
 
 ### The script (run_analysis.R) that generates the tidy_data does the following
-===============================================================================
+-------------------------------------------------------------------------------
 1. reads the raw data and binds the columns (subject to activity, then to test)
 2. extracts measurements from the raw data
 3. renames the activity lables by word descriptors
@@ -51,7 +51,7 @@ Note: Additional infomration about the raw data set generation is given in the r
 
 
 ### Raw data required and its structure to run the analysis script
-==================================================================
+------------------------------------------------------------------
 - 'features.txt': List of all features
 - 'activity_labels.txt': Links the class labels with their activity name
 
@@ -69,5 +69,5 @@ subject_train,test files reside.
 
 
 ### References
-==============
+--------------
 1. More details about the raw data are available from "https://class.coursera.org/getdata-011/human_grading/view/courses/973498/assessments/3/submissions"
