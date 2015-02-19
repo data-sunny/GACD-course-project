@@ -62,9 +62,9 @@ Note: Additional infomration about the raw data set generation is given in the r
 - 'test/X_test.txt': Test set
 - 'test/y_test.txt': Test labels
 - 'test/subject_test.txt'
-NOTE: The analysis script run_analysis.R must reside in the same directory as the features and activity_labels files.
-This directory should then have 2 sub-directories "train" and "test" within which the X,y_train,test and 
-subject_train,test files reside.
+-	NOTE: The analysis script run_analysis.R must reside in the same directory as the features and activity_labels files.
+	This directory should then have 2 sub-directories "train" and "test" within which the X,y_train,test and 
+	subject_train,test files reside.
 
 
 
